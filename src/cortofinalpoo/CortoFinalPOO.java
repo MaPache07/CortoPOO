@@ -18,12 +18,11 @@ public class CortoFinalPOO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        JFrame ventana = new JFrame("Ventana");
-        ventana.setContentPane(new Consulta());
-        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventana.setResizable(false);
-        ventana.pack();
-        ventana.setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable(){
+            @Override
+            public void run() {
+                new Consulta().setVisible(true);
+            }
+        });
     }
-    
 }

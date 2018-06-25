@@ -50,7 +50,7 @@ public class Conexion {
         user = "root";
         pass="";
         driver="com.mysql.jdbc.Driver";
-        url="jdbc:mysql://localhost/filtros";
+        url="jdbc:mysql://localhost/corto";
     }
 
     public Connection getCnx() {
